@@ -7,6 +7,11 @@ from torch.optim.lr_scheduler import StepLR
 
 import argparse
 
+import os
+
+if not os.path.exists('saved_models/'):
+	os.makedirs('saved_models/')
+
 use_cuda = torch.cuda.is_available()
 
 class classifier(nn.Module):
@@ -107,7 +112,7 @@ def main():
 		test(model, device, test_loader)
 		scheduler.step()
 
-	torch.save(model.state_dict(), 'mnist_cnn.pt')
+	torch.save(model.state_dict(), 'saved_models/mnist_cnn.pt')
 
 if __name__ == '__main__':
 	main()
