@@ -78,9 +78,9 @@ def r(a):
 
 if __name__ == '__main__':
 	start = time.time()
-	for_display = load_image('puzzles/sample.png', output_type='array')
+	for_display = load_image('sample.png', output_type='array')
 	print('--- Input Puzzle ---')
 	print(for_display)
-	numbers = load_image('puzzles/sample.png')
-	print('\n--- Solution')
+	numbers = load_image('sample.png')
+	print('\n--- Solution ---')
 	r(numbers)
