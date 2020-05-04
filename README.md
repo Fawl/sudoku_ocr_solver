@@ -12,8 +12,12 @@ To install PyTorch:
 
 ## Getting started
 
+First, download the repository.
+
 Ensure you have PyTorch installed.
+
 Then, run the training script to train the digit character classifier.
+
 The solver script can then be run using the trained classifier.
 
 ```
